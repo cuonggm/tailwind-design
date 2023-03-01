@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-tailwindcss": "npx tailwindcss -i ./input.css -o ./css/output.css",
-    "deploy": "aws s3 sync ./css s3://design.cuonggm.io/css && aws s3 sync ./src s3://design.cuonggm.io/src && aws s3 cp ./index.html s3://design.cuonggm.io/"
+    "deploy": "aws s3 sync ./src s3://design.cuonggm.io/"
   },
   "author": "",
   "license": "ISC",
