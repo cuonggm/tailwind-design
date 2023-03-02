@@ -10,7 +10,45 @@
     </script>
     <title>0001_subscribe.html</title>
   </head>
-  <body>
-    <h1>0001</h1>
+  <body class="text-white">
+    <!-- Background -->
+    <div class="flex justify-center items-center min-h-screen bg-zinc-700">
+      <!-- Card -->
+      <div class="bg-zinc-800 p-2 mx-6 rounded-2xl">
+        <!-- Flex Container -->
+        <div class="flex flex-col md:flex-row">
+          <!-- Image -->
+          <img
+            src="img/healthy-food.jpg"
+            alt=""
+            class="object-cover h-80 rounded-2xl md:rounded-r-none"
+          />
+          <!-- Content -->
+          <div class="p-6 text-center md:text-left flex flex-col space-y-3">
+            <h2 class="text-xl font-light">Lorem ipsum dolor sit amet.</h2>
+            <p class="text-sm max-w-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              mollitia doloremque corporis porro dolorum doloribus magni
+              assumenda eligendi possimus hic?
+            </p>
+            <!-- Form -->
+            <div
+              class="flex flex-col md:flex-row pt-3 justify-center items-center md:justify-start space-y-5 md:space-y-0 space-x-0 md:space-x-4"
+            >
+              <input
+                type="text"
+                class="p-2 px-4 w-3/4 md:w-auto placeholder:italic bg-zinc-800 border border-zinc-300 text-center focus:outline-none md:self-auto"
+                placeholder="Enter your email"
+              />
+              <button
+                class="border px-4 py-2 rounded-2xl bg-lime-500 border-lime-500 md:w-auto w-52"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
