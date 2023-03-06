@@ -10,11 +10,46 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- Add CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Try customizing your config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
+          extend: {
+            fontFamily: {
+              sans: ["Josefin Sans", "sans-serif"],
+              alata: ["Alata"],
+            },
+            letterSpacing: {
+              widest: ".3em",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- My Own Script -->
     <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Try adding some custom CSS -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
     <title>Simple Tailwind Starter</title>
   </head>
   <body>
-    <h1 class="text-4xl font-bold">ABC</h1>
+    <h1 class="text-3xl">Simple Tailwind Starter</h1>
   </body>
 </html>
