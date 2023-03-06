@@ -46,10 +46,83 @@
           content-visibility: auto;
         }
       }
+      #hero {
+        background-image: url("./images/desktop/image-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @media (max-width: 576px) {
+        #hero {
+          background-image: url("./images/mobile/image-hero.jpg");
+          background-position: center;
+        }
+      }
     </style>
     <title>Simple Tailwind Starter</title>
   </head>
   <body>
-    <h1 class="text-3xl">Simple Tailwind Starter</h1>
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Hero Container -->
+      <div class="container max-w-6xl mx-auto px-6 py-12">
+        <!-- Menu/Logo Container -->
+        <nav class="flex items-center justify-between font-bold text-white">
+          <!-- Logo -->
+          <img src="images/logo.svg" alt="" class="" />
+          <!-- Menu -->
+          <div class="hidden h-10 font-alata md:flex md:space-x-8">
+            <!-- About -->
+            <div class="group">
+              <a href="#">About</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+
+            <!-- Products -->
+            <div class="group">
+              <a href="#">Products</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+
+            <!-- Events -->
+            <div class="group">
+              <a href="#">Events</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+
+            <!-- Careers -->
+            <div class="group">
+              <a href="#">Careers</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+
+            <!-- Support -->
+            <div class="group">
+              <a href="#">Support</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+          </div>
+
+          <!-- More Button -->
+        </nav>
+        <!-- Mobile Menu -->
+
+        <div
+          class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl"
+        >
+          Impressive Experiences that deliver
+        </div>
+      </div>
+    </section>
   </body>
 </html>
